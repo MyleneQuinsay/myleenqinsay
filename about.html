@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - In Loving Memory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .banner {
+            background: url(images/kel.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Larger text for the Biography section */
+        #about h2 {
+            font-size: 2.5rem;
+        }
+
+        #about p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+        }
+
+        /* Embed style */
+        .embed-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            height: 0;
+        }
+
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>Michael</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div>
+            <h1><strong> About Michael Jackson</strong></h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Jakson.jpg" class="img-fluid rounded" alt="About Image">
+                </div>
+                <div class="col-md-6 content-section">
+                    <h2 class="mb-4">Who is Michael</h2>
+                    <p>Michael Jackson was more than just a legendary musician; he was a cultural phenomenon who reshaped the
+                        entertainment industry. Known for his unmatched talent as a singer, songwriter, and dancer, he earned
+                        the title of the "King of Pop." His career spanned over four decades, during which he broke numerous
+                        records, revolutionized music videos, and set trends in both music and fashion. Beyond his musical
+                        achievements, Jackson was a humanitarian, using his fame to advocate for various causes, including
+                        children's welfare and racial equality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">His Famous Music</h2>
+            <p class="text-center">"The best way to honor someone’s memory is to live a life they’d be proud of."</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="embed-container">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Billie Jean</h5>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/Zi_XLOBDo_Y?si=oteRyqWRZZVQt_aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="embed-container">
+                        <!-- Embed Michael Jackson's "Thriller" -->
+                        <iframe src="https://www.youtube.com/embed/sOnqjkJTMaA" title="Thriller - Michael Jackson"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Thriller</h5>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/4V90AmXnguw?si=xi1sFkcYq8BUUcLK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="embed-container">
+                        <!-- Embed Michael Jackson's "Beat It" -->
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beat It</h5>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/oRdxUFDoQe0?si=dclRQjlsqS7Dm210" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2024 In Loving Memory Of Michael Jackson. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+

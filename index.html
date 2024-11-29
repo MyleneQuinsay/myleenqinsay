@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Loving Memory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .banner {
+            background: url(images/kel.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+        }
+
+        .photo-gallery img {
+            object-fit: cover;
+        }
+
+        .navbar-brand {
+        font-size: 1.5rem; /* Make brand text larger */
+        font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Increase size of navigation links */
+        font-weight: 500; /* Make links slightly bolder */
+        }
+
+        /* Larger text for the Biography section */
+        #about h2 {
+        font-size: 2.5rem; /* Increase heading size */
+        }
+
+
+         /* New styles for larger text in Biography */
+        #about h2 {
+        font-size: 2.5rem; /* Increases heading size */
+        }
+
+        #about p {
+        font-size: 1.25rem; /* Increases paragraph size */
+        line-height: 1.8; /* Improves readability */
+        }
+
+        .shrink img {
+        transition: 1s ease;
+        }
+
+        .shrink img:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        transition: 1s ease;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Michael</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <!-- Banner Section -->
+    <header class="banner">
+        <div>
+            <h1><strong>In Loving Memory of Michael Jackson</strong></h1>
+            <p class="lead">August 29, 1958 - June 25, 2009</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/jaki.jpg" class="img-fluid rounded" alt="Memory Image">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Biography</h2>
+                    <p>Michael Jackson, known as the "King of Pop," was born on August 29, 1958, in Gary, Indiana. He began his musical
+                       career at a young age as the lead singer of the Jackson 5, a group formed with his brothers. His solo career took off in the 1970s with groundbreaking albums like Off the Wall and Thriller, the latter becoming the best-selling album of all time. Known for his distinctive voice, innovative dance moves like the moonwalk, and contributions to pop culture, Jackson became a global icon.
+                       Michael Jackson passed away on June 25, 2009, but his artistry continues to inspire generations worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-4 text-white">His Photos</h2>
+        <div class="row g-3 photo-gallery shrink">
+            <!-- Gallery images with modal triggers -->
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks1.jpg', ' Michael Jackson performing on stage. Michael Jackson, the King of Pop, captivated audiences worldwide with his electrifying performances. On stage, he effortlessly blended intricate dance moves with powerful vocals, creating an unforgettable experience for his fans. His energy, charisma, and signature moves, like the Moonwalk. ' )">
+                    <img src="images/jaks1.jpg" class="img-fluid rounded" alt="Gallery Image 1" width="300" height="200">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks2.jpg', 'Michael Jackson’s stage presence was nothing short of legendary. With every performance, he mesmerized the crowd with his iconic moves and high-energy shows. His ability to connect with the audience, combined with his undeniable talent and style, made each concert a once-in-a-lifetime experience.')">
+                    <img src="images/jaks2.jpg" class="img-fluid rounded" alt="Gallery Image 2" width="300" height="200">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks3.jpg', 'Michael Jacksons performances were a masterclass in showmanship. Whether it was his moonwalk or his unparalleled vocal ability, he redefined what it meant to be a live performer. Every concert was an unforgettable experience, filled with stunning visuals, captivating dance routines, and the pure joy of music that connected with fans all over the world.')">
+                    <img src="images/jaks3.jpg" class="img-fluid rounded" alt="Gallery Image 3" width="300" height="200">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks4.jpg', 'Known as the King of Pop, Michael Jackson brought an energy to the stage that few could match. His electrifying performances, complete with intricate choreography and powerful vocals, left an indelible mark on the music world. Each concert was a celebration of his unique artistry and his undeniable influence on pop culture.')">
+                    <img src="images/jaks4.jpg" class="img-fluid rounded" alt="Gallery Image 3" width="300" height="200">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks5.jpg', 'Michael Jacksons live shows were more than just concerts; they were an experience. His energy, charisma, and groundbreaking choreography captivated audiences every time he hit the stage. Whether performing his classic hits or groundbreaking new material, his stage presence was unmatched, and his concerts were always a celebration of his musical genius.')">
+                    <img src="images/jaks5.jpg" class="img-fluid rounded" alt="Gallery Image 3" width="300" height="200">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/jaks6.jpg', 'From the first note to the last beat, Michael Jackson’s live performances were magical. His ability to fuse music, dance, and spectacle created an unforgettable experience for every fan in the audience. His commitment to perfection and his unwavering passion for entertaining made him a true legend in the world of live performance')">
+                    <img src="images/jaks6.jpg" class="img-fluid rounded" alt="Gallery Image 3" width="300" height="200">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Michael Jackson</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" class="img-fluid mb-3" alt="Modal Image">
+                <p id="modalContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript for Modal -->
+<script>
+    function showImage(imageSrc, content) {
+        document.getElementById('modalImage').src = imageSrc;  // Set the image source
+        document.getElementById('modalContent').innerText = content;  // Set the content
+    }
+</script>
+
+    <!-- Tribute Messages Section -->
+<section id="tributes" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Tributes</h2>
+        <div id="tributeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <img src="images/paul.jpg" class="rounded-circle mb-3" alt="Tribute 1" width="100" height="100">
+                            <h5 class="card-title">Paul Gambaccini</h5>
+                            <p class="card-text">"Jackson would be remembered for his solo career rather than the controversies that dogged him."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <img src="images/STEVIE.jpg" class="rounded-circle mb-3" alt="Tribute 2" width="100" height="100">
+                            <h5 class="card-title">Stevie Wonder</h5>
+                            <p class="card-text">"You couldn't help but be instantly moved by the way Michael sang a song like 'I Want You Back' or 'I'll Be There' or, later, 'The Way You Make Me Feel."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <img src="images/Madonna.jpg" class="rounded-circle mb-3" alt="Tribute 3" width="100" height="100">
+                            <h5 class="card-title">Madonna</h5>
+                            <p class="card-text">"I can't stop crying over the sad new."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <img src="images/brooke.jpg" class="rounded-circle mb-3" alt="Tribute 4" width="100" height="100">
+                            <h5 class="card-title">Brooke Shields</h5>
+                            <p class="card-text">" was 13 when I first met Michael Jackson. We instantly became friends. Nothing was jaded about him. I just was so impressed by his sweetness."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#tributeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tributeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Leave a Tribute</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your tribute message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2024 In Loving Memory of Michael Jackson. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
